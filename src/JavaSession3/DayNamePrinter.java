@@ -1,6 +1,5 @@
 package JavaSession3;
 
-
 public class DayNamePrinter {
     public static void main (String[] args){
         final int DAY_VALUE = 4;
@@ -22,6 +21,4 @@ public class DayNamePrinter {
 
         }
     }
-
-
 }

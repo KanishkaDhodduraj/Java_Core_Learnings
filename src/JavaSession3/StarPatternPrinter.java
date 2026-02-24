@@ -1,5 +1,4 @@
 package JavaSession3;
-
 import java.util.Scanner;
 
 public class StarPatternPrinter {
@@ -17,7 +16,6 @@ public class StarPatternPrinter {
 
         scanner.close();
     }
-
     public static void printStarPattern(int rows) {
         // Outer loop for rows
         for (int i = 1; i <= rows; i++) {
@@ -25,7 +23,6 @@ public class StarPatternPrinter {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-
             System.out.println();
         }
     }

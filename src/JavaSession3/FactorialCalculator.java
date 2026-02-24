@@ -1,5 +1,4 @@
 package JavaSession3;
-
 import java.util.Scanner;
 
 public class FactorialCalculator {
@@ -8,8 +7,6 @@ public class FactorialCalculator {
 
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
-
-
         if (number < 0) {
             System.out.println("Factorial is not defined for negative numbers.");
         } else {
@@ -24,7 +21,6 @@ public class FactorialCalculator {
         if (number == 0 || number == 1) {
             return 1;
         }
-
         long result = 1;
         for (int i = 2; i <= number; i++) {
             result *= i;

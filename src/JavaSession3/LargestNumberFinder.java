@@ -13,8 +13,8 @@ public class LargestNumberFinder {
 
         //Using if-else ladder
         int largestNumber;
-        if ( firstNumber >= secondNumber && firstNumber >= thirdNumber ) {
-           largestNumber = firstNumber;
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
+            largestNumber = firstNumber;
         } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             largestNumber = secondNumber;
         } else {
