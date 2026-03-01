@@ -2,7 +2,7 @@ package JavaSession4;
 import java.util.Scanner;
 
 public class ArraySumPrinter {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter number of rows : ");
@@ -10,19 +10,30 @@ public class ArraySumPrinter {
         System.out.println("Enter number of columns :");
         int column = scanner.nextInt();
 
-        int[][] array = new int[row][column];
-        int sum = 0;
-
-        System.out.println("Enter the matrix : ");
-        for(int i = 0 ; i < row ; i++){
-            for(int j = 0 ; j < column ; j++){
-              array[i][j] = scanner.nextInt();
-              sum += array[i][j];
+        int[][] array1 = new int[row][column];
+        System.out.println("Enter elements of the first array : ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                array1[i][j] = scanner.nextInt();
             }
         }
 
-        System.out.println("Sum of elements in 2D array :" + sum);
-        scanner.close();
+        int[][] array2 = new int[row][column];
+        System.out.println("Enter elements of the second array : ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                array2[i][j] = scanner.nextInt();
+            }
+        }
 
+        System.out.println("Sum of 2D array : ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.println((array1[i][j] + array2[i][j]) + " ");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
     }
 }
