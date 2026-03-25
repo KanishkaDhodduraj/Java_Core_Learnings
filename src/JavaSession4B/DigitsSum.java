@@ -25,3 +25,4 @@ public class DigitsSum {
             sc.close();
         }
     }
+
